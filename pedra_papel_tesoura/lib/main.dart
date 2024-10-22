@@ -10,6 +10,7 @@ void main() {
       appBar: AppBar(
         title: const Text("Pedra papel tesoura"),
         backgroundColor: Colors.blue,
+        foregroundColor: Colors.white,
       ),
       body: Home()
     )

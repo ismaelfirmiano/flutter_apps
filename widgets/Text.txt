@@ -1,0 +1,37 @@
+’Texto’
+◦ style: TextStyle (
+    fontSize: 30,
+    fontSyle: FontStyle.normal,
+    color: Colors.black,
+    fontWeight: FontWeight.normal,
+    letterSpacing: 0,
+    wordSpacing: 10,
+    decoration: TextDecoration.none, [ double, lineThrough ]
+◦   decorationColor: Colors.greenAccent,
+◦   decorationStyle: TextDecorationStyle.dotted
+)
+
+
+TextStyle:
+this.inherit = true,
+this.color,
+this.backgroundColor,
+this.fontSize,
+this.fontWeight,
+this.fontStyle,
+this.letterSpacing,
+this.wordSpacing,
+this.textBaseline,
+this.height,
+this.leadingDistribution,
+this.locale,
+this.foreground,
+this.background,
+this.shadows,
+this.fontFeatures,
+this.fontVariations,
+this.decoration,
+this.decorationColor,
+this.decorationStyle,
+this.decorationThickness,
+this.debugLabel,

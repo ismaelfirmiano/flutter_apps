@@ -1,0 +1,13 @@
+TextButton, ElevatedButton, IconButton
+
+onPressed: () { },
+child: Text(”Clique aqui!”)
+
+// Outra maneira //
+
+GestureDetector
+
+onTap: () { },
+onDoubleTap: () { },
+onLongPress: () { },
+child: Text(”Clique aqui!”)

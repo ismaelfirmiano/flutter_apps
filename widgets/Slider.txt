@@ -1,0 +1,11 @@
+value: _variavel
+min: 0,
+max: 10,
+onChanged: (double value) {
+    _variavel = value;
+
+    setState((){});
+}
+divisions: 10,
+label: _label,
+activeColor: Colors.blue,
