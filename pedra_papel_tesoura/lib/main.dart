@@ -9,7 +9,7 @@ void main() {
     home: Scaffold(
       appBar: AppBar(
         title: const Text("Pedra papel tesoura"),
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.blue,
       ),
       body: Home()
     )

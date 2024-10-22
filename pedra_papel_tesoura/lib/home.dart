@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
+
 class Home extends StatefulWidget {
   const Home({super.key});
 
@@ -41,11 +42,10 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Center(
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Padding(
-          padding: EdgeInsets.all(30),
-          child:Column(
+          Column(
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -53,10 +53,16 @@ class _HomeState extends State<Home> {
                     Column(
                       mainAxisAlignment:  MainAxisAlignment.spaceBetween,
                       children: [
-                        const Text("Computador"),
+                        const Text(
+                          "Computador",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold
+                          ),
+                        ),
                         SizedBox(
-                          width: 120,
-                          height: 120,
+                          width: 150,
+                          height: 150,
                           child: Image.asset(
                             _computador
                           ),
@@ -67,10 +73,16 @@ class _HomeState extends State<Home> {
                     Column(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        const Text("Usuário"),
+                        const Text(
+                          "Usuário",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold
+                          ),
+                        ),
                         SizedBox(
-                          width: 120,
-                          height: 120,
+                          width: 150,
+                          height: 150,
                           child: Image.asset(
                             _usuario
                           ),
@@ -79,41 +91,40 @@ class _HomeState extends State<Home> {
                     )
                   ],
                 ),
-                Text(_resultado)
               ]
+            ),
+          Text(
+            _resultado,
+            style: const TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.bold
             ),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(
-                width: 50,
-                height: 50,
+                width: 80,
+                height: 80,
                 child: GestureDetector(
-                onTap: () => novaRodada(0),
-                child: Image.asset(
-                  "images/pedra.png"
-                  ),
+                  onTap: () => novaRodada(0),
+                  child: Image.asset("images/pedra.png"),
+                  )
+              ),
+              SizedBox(
+                width: 80,
+                height: 80,
+                child: GestureDetector(
+                  onTap: () => novaRodada(1),
+                  child: Image.asset("images/papel.png"),
                 )
               ),
               SizedBox(
-                width: 50,
-                height: 50,
+                width: 80,
+                height: 80,
                 child: GestureDetector(
-                onTap: () => novaRodada(1),
-                child: Image.asset(
-                  "images/papel.png"
-                  ),
-                )
-              ),
-              SizedBox(
-                width: 50,
-                height: 50,
-                child: GestureDetector(
-                onTap: () => novaRodada(2),
-                child: Image.asset(
-                  "images/tesoura.png"
-                  ),
+                  onTap: () => novaRodada(2),
+                  child: Image.asset("images/tesoura.png"),
                 )
               ),
             ],

@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'dart:math';
 
@@ -61,7 +63,7 @@ class _HomeState extends State<Home> {
             child: Text(
               _frase,
               style: TextStyle(
-                fontSize: 15
+                fontSize: 19
               ),
               textAlign: TextAlign.center,
             )

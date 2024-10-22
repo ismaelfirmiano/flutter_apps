@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'home.dart';
 void main(){
@@ -6,8 +8,11 @@ void main(){
     debugShowCheckedModeBanner: false,
     home: Scaffold(
       appBar: AppBar(
-        title: Text("Frases Aleatórias"),
-        backgroundColor: Colors.blue,
+        title: Text(
+          "Frases Aleatórias",
+          style: TextStyle(color: Colors.white)
+        ),
+        backgroundColor: Colors.green,
       ),
       body: Home()
     )
