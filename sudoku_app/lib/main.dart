@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import 'home.dart';
+import 'app.dart';
 
 void main() {
   runApp(const MaterialApp(
     title: "Projeto 3",
     debugShowCheckedModeBanner: false,
-    home: Home()
+    home: App()
   ));
 }
